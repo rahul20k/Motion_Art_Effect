@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Navbar />
+      <iframe
+        className="full-screen-preview__frame"
+        src="https://qodematrix.com/motion-art-for-elementor/"
+        name="preview-frame"
+        frameBorder="0"
+        noResize="noresize"
+        data-view="fullScreenPreview"
+        allow="geolocation 'self'; autoplay 'self'"
+        style={{ height: '887px', width: '100%' }}
+      />
     </div>
   );
 }
